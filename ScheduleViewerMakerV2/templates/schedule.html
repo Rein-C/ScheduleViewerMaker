@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Schedule</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.subject_name.label }} {{ form.subject_name() }}
+    </div>
+    <div>
+        {{ form.class_section.label }} {{ form.class_section() }}
+    </div>
+    <div>
+        {{ form.professor_name.label }} {{ form.professor_name() }}
+    </div>
+    <div>
+        {{ form.day_week.label }} {{ form.day_week() }}
+    </div>    
+    <div>
+        {{ form.time_duration.label }} {{ form.time_duration() }}
+    </div>
+    <div>
+        {{ form.room_number.label }} {{ form.room_number() }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+
+<h3>Previous Schedules</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Section</th>
+            <th>Professor</th>
+            <th>Day/s of the Week</th>
+            <th>Time</th>
+            <th>Room Number</th>
+                
+        </tr>
+    </thead>
+    <tbody>
+        {% for schedule in schedules %}
+        <tr>
+            <td>{{ schedule.subject_name }}</td>
+            <td>{{ schedule.class_section }}</td>
+            <td>{{ schedule.professor_name }}</td>
+            <td>{{ schedule.day_week }}</td>
+            <td>{{ schedule.time_duration }}</td>
+            <td>{{ schedule.room_number }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
