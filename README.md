@@ -104,7 +104,7 @@ Congratulations! You have successfully set up and run your Flask-based website. 
 
 ## Versions 1 and 2 are available, with key differences regarding:
 
-V1 
+## V1 
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V1.png)
 Subject Schedule details:
 
@@ -120,7 +120,7 @@ Time duration ✔, but maybe needs revision (supposed to be a drop down selectio
 
 Room Number ✖
 
-V2
+## V2
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V2.png)
 Subject Schedule details:
 
@@ -133,5 +133,21 @@ Professor Name ✔
 Day/s of the Week ✔
 
 Time duration ✔, but maybe needs revision (supposed to be a drop down selection of class hours for beginning and end)
+
+Room Number ✔
+
+##V3
+![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V3.png)
+Subject Schedule details:
+
+Subject Name ✔
+
+Class Section ✔
+
+Professor Name ✔
+
+Day/s of the Week ✔ (revised, multiple days can now be manually selected)
+
+Time duration ✔
 
 Room Number ✔
