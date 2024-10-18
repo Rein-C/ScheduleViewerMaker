@@ -102,7 +102,7 @@ Congratulations! You have successfully set up and run your Flask-based website. 
 
 
 
-## Versions 1 and 2 are available, with key differences regarding:
+## Versions 1,2 and 3 are available, with key differences regarding:
 
 ## V1 
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V1.png)
