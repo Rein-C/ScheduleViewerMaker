@@ -4,7 +4,7 @@
 
 # Flask Website Setup Guide
 
-This guide will walk you through the process of setting up and running a Flask-based website on your local machine.
+This guide will walk you through the process of setting up and running a Flask-based website on your local machine after downloading and extracting the ZIP file.
 
 ## Prerequisites
 
@@ -12,33 +12,25 @@ Before you begin, ensure you have the following installed:
 
 - [Python](https://www.python.org/downloads/) (version 3.6 or higher)
 - [pip](https://pip.pypa.io/en/stable/installing/) (Python package installer)
-- [Git](https://git-scm.com/downloads) (optional, for cloning the repository)
 
-## Step 1: Clone the Repository
+## Step 1: Extract the ZIP File
 
-If you haven't already cloned the repository, you can do so using Git:
+Extract the downloaded ZIP file to a directory of your choice.
 
-```bash
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
-```
+## Step 2: Open the Terminal
 
-## Step 2: Create a Virtual Environment
-
-It's recommended to use a virtual environment to manage dependencies. Create and activate a virtual environment:
+Open a terminal or command prompt and navigate to the directory where you extracted the ZIP file.
 
 ### On Windows:
 
 ```bash
-python -m venv venv
-.\venv\Scripts\activate
+cd path\to\your\extracted\folder
 ```
 
 ### On macOS/Linux:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+cd path/to/your/extracted/folder
 ```
 
 ## Step 3: Install Dependencies
@@ -51,39 +43,19 @@ pip install -r requirements.txt
 
 ## Step 4: Configure the Application
 
-Depending on your application, you may need to configure environment variables or settings. Typically, this involves creating a `.env` file or setting up a configuration file.
+The application uses a `config.py` file for configuration. This file is already provided in the repository. Ensure that the `config.py` file is correctly set up with the necessary configurations.
 
-### Example `.env` File:
-
-```plaintext
-FLASK_APP=app.py
-FLASK_ENV=development
-SECRET_KEY=your_secret_key
-DATABASE_URI=sqlite:///yourdatabase.db
-```
-
-### Load Environment Variables:
-
-If you are using a `.env` file, you can load it using the `python-dotenv` package:
-
-```bash
-pip install python-dotenv
-```
-
-Then, in your `app.py` or `__init__.py`:
+### Example `config.py`:
 
 ```python
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-
-# Access environment variables
-SECRET_KEY = os.getenv('SECRET_KEY')
-DATABASE_URI = os.getenv('DATABASE_URI')
+SECRET_KEY = os.urandom(32)
+SQLALCHEMY_DATABASE_URI = 'sqlite:///schedule_viewer.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
 
-## Step 5: Initialize the Database (if applicable)
+## Step 5: Initialize the Database
 
 If your application uses a database, you may need to initialize it. For example, if you are using Flask-SQLAlchemy and Flask-Migrate:
 
@@ -107,11 +79,18 @@ By default, Flask will run the application on `http://127.0.0.1:5000/`. Open thi
 
 You should now be able to access your Flask application by navigating to `http://127.0.0.1:5000/` in your web browser.
 
+### Application Routes
+
+- **Home Page:** `http://127.0.0.1:5000/`
+- **Login Page:** `http://127.0.0.1:5000/login`
+- **Signup Page:** `http://127.0.0.1:5000/signup`
+- **Schedule Page:** `http://127.0.0.1:5000/schedule` (requires login)
+- **Logout:** `http://127.0.0.1:5000/logout` (requires login)
+
 ## Troubleshooting
 
 If you encounter any issues, here are a few common problems and their solutions:
 
-- **Virtual Environment Not Activating:** Ensure you are in the correct directory and that the virtual environment was created successfully.
 - **Missing Dependencies:** Double-check the `requirements.txt` file and ensure all packages are listed correctly.
 - **Database Issues:** Ensure the database URI is correct and that the database file exists (if using SQLite).
 
