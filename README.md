@@ -1,7 +1,7 @@
 # ScheduleViewerMaker
 ---
 ## V1.04 (10/22/2024)
-![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
+![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V1.0.4.png)
 This website is made with Python + Flask + SQLite. It allows users to manage and view their schedules.
 ## Features
 
