@@ -155,3 +155,12 @@ Day/s of the Week ✔ (revised, multiple days can now be manually selected)
 Time duration ✔
 
 Room Number ✔
+
+##V3
+![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
+Subject Schedule details:
+
+Added Delete Button
+
+Added Export PDF
+
