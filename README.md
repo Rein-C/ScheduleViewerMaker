@@ -1,7 +1,35 @@
 # ScheduleViewerMaker
+---
+## V1.04 (10/22/2024)
+![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
+This website is made with Python + Flask + SQLite. It allows users to manage and view their schedules.
+# Features
+
+   # User authentication (login, signup, logout)
+
+   # CRUD operations for schedules
+
+  #  Export schedules as PDF
+
+# Subject Schedule Details
+
+    Subject Name ✔
+
+    Class Section ✔
+
+    Professor Name ✔
+
+    Day/s of the Week ✔
+
+    Time duration ✔
+
+    Room Number ✔
+
+    NEW! Added Delete Button
+
+    NEW! Added Export PDF Function
 
 ---
-
 # Flask Website Setup Guide
 
 This guide will walk you through the process of setting up and running a Flask-based website on your local machine after downloading and extracting the ZIP file.
@@ -103,64 +131,3 @@ If you encounter any issues, here are a few common problems and their solutions:
 ## Conclusion
 
 Congratulations! You have successfully set up and run your Flask-based website. Feel free to explore and modify the application as needed.
-
----
-
-## Versions 1,2,3 and 4 are included to show progress made 
-
-## V1 
-![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V1.png)
-Subject Schedule details:
-
-Subject Name ✔
-
-Class Section ✔
-
-Professor Name ✔
-
-Day/s of the Week ✖
-
-Time duration ✔, but maybe needs revision (supposed to be a drop down selection of class hours for beginning and end)
-
-Room Number ✖
-
-## V2
-![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V2.png)
-Subject Schedule details:
-
-Subject Name ✔
-
-Class Section ✔
-
-Professor Name ✔
-
-Day/s of the Week ✔
-
-Time duration ✔, but maybe needs revision (supposed to be a drop down selection of class hours for beginning and end)
-
-Room Number ✔
-
-## V3
-![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V3.png)
-Subject Schedule details:
-
-Subject Name ✔
-
-Class Section ✔
-
-Professor Name ✔
-
-Day/s of the Week ✔ (revised, multiple days can now be manually selected)
-
-Time duration ✔
-
-Room Number ✔
-
-## V4
-![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
-Subject Schedule details:
-
-Added Delete Button
-
-Added Export PDF
-
