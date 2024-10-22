@@ -1,0 +1,69 @@
+<!-- templates/schedule.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Your Schedule</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.subject_name.label }} {{ form.subject_name() }}
+    </div>
+    <div>
+        {{ form.class_section.label }} {{ form.class_section() }}
+    </div>
+    <div>
+        {{ form.professor_name.label }} {{ form.professor_name() }}
+    </div>
+    <div>
+        {{ form.day_week.label }} {{ form.day_week() }}
+    </div>    
+    <div>
+        {{ form.start_time.label }} {{ form.start_time() }}
+    </div>
+    <div>
+        {{ form.end_time.label }} {{ form.end_time() }}
+    </div>
+    <div>
+        {{ form.room_number.label }} {{ form.room_number() }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+
+<h3>Your Schedules</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Section</th>
+            <th>Professor</th>
+            <th>Days of the Week</th>
+            <th>Time</th>
+            <th>Room Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for schedule in schedules %}
+        <tr>
+            <td>{{ schedule.subject_name }}</td>
+            <td>{{ schedule.class_section }}</td>
+            <td>{{ schedule.professor_name }}</td>
+            <td>{{ ', '.join(schedule.day_week) }}</td>
+            <td>{{ schedule.start_time }} - {{ schedule.end_time }}</td>
+            <td>{{ schedule.room_number }}</td>
+            <td>
+                <form action="{{ url_for('delete_schedule', schedule_id=schedule.id) }}" method="POST">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="export-buttons">
+    <a href="{{ url_for('export_pdf') }}"><button class="pdf">Export as PDF</button></a>
+</div>
+{% endblock %}
