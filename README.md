@@ -3,31 +3,30 @@
 ## V1.04 (10/22/2024)
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
 This website is made with Python + Flask + SQLite. It allows users to manage and view their schedules.
-# Features
+## Features
 
-   # User authentication (login, signup, logout)
+• User authentication (login, signup, logout)
 
-   # CRUD operations for schedules
+• CRUD operations for schedules
 
-  #  Export schedules as PDF
+• Export schedules as PDF
 
-# Subject Schedule Details
+## Subject Schedule Details
 
-    Subject Name ✔
+Create and View Personalized Schedules
+Input subject details, including:
 
-    Class Section ✔
+    • Subject Name 
+    • Class Section 
+    • Professor Name 
+    • Day/s of the Week 
+    • Time Duration 
+    • Room Number 
 
-    Professor Name ✔
+Schedule Management
 
-    Day/s of the Week ✔
-
-    Time duration ✔
-
-    Room Number ✔
-
-    NEW! Added Delete Button
-
-    NEW! Added Export PDF Function
+    • NEW! Delete Button: Easily remove schedule entries
+    • NEW! Export to PDF: Save and share schedules in PDF format
 
 ---
 # Flask Website Setup Guide
