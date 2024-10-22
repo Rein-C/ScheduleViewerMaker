@@ -140,7 +140,7 @@ Time duration ✔, but maybe needs revision (supposed to be a drop down selectio
 
 Room Number ✔
 
-##V3
+## V3
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V3.png)
 Subject Schedule details:
 
@@ -156,7 +156,7 @@ Time duration ✔
 
 Room Number ✔
 
-##V4
+## V4
 ![alttext](https://github.com/Rein-C/ScheduleViewerMaker/blob/main/Schedule%20Maker%20V4.png)
 Subject Schedule details:
 
