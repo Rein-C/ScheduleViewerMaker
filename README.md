@@ -105,15 +105,6 @@ If you encounter any issues, here are a few common problems and their solutions:
 Congratulations! You have successfully set up and run your Flask-based website. Feel free to explore and modify the application as needed.
 
 ---
-```
-
-### Explanation:
-
-- **Prerequisites**: Added the GTK+ for Windows Runtime Environment Installer as a prerequisite.
-- **Step 2**: Included detailed steps for downloading and installing the GTK+ runtime environment.
-
-Replace the existing README content with this updated version to ensure users are aware of the GTK+ installation requirement.
-
 
 ## Versions 1,2 and 3 are available, with key differences regarding:
 
